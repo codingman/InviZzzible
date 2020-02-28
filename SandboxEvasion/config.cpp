@@ -8,7 +8,8 @@ namespace Config {
 		{ ConfigGlobal::COUNTERMEASURES,	"countermeasures" },
 		{ ConfigGlobal::TYPE,				"type" },
 		{ ConfigGlobal::ENABLED,			"enabled" },
-		{ ConfigGlobal::ARGUMENTS,			"arguments" }
+		{ ConfigGlobal::ARGUMENTS,			"arguments" },
+		{ ConfigGlobal::SCORE,				"score" }
 	};
 
 	std::map<ConfigGlobalType, std::string> cgt2s = {
@@ -31,6 +32,9 @@ namespace Config {
 		{ ConfigGlobalType::EXE_PATH_PATTERN,		"exe_path_pattern"},
 		{ ConfigGlobalType::MAX_PROCS_NUMBER,		"max_processes_number" },
 		{ ConfigGlobalType::PROC_WITH_LONG_NAME,	"process_with_long_name" },
+		{ ConfigGlobalType::USER_NAME,				"user_name" },
+		{ ConfigGlobalType::COMPUTER_NAME,			"computer_name" },
+		{ ConfigGlobalType::HOST_NAME,				"host_name" },
 	};
 
 	std::map<ConfigGlobalEnabled, std::string> cge2s = {
@@ -113,6 +117,7 @@ namespace Config {
 		{ ConfigGeneric::MOUSE_RAW_ACTIVE,		"MouseRawActive" },
 		{ ConfigGeneric::BIG_RAM_ALLOC,			"BigRamAlloc" },
 		{ ConfigGeneric::USER_INPUT_ACTIVITY,	"UserInputActivity" },
+		{ ConfigGeneric::AUDIO_DEVICE_ABSENCE,  "AudioDeviceAbsence"},
 	};
 
 } // Config
